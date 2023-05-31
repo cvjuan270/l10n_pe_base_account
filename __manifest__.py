@@ -1,35 +1,33 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "l10n_pe_base_account",
+    'name': "Parametros Contabilidad - Peru",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Estrablece parametros y permisos para la contabilidad de Peru""",
 
     'description': """
-        Long description of module's purpose
+        - Completa tipos de comprobantes de pago como "[91] No domiciliados", etc.
     """,
 
-    'author': "My Company",
-    'website': "https://www.yourcompany.com",
+    'author': "Tagre app",
+    'website': "https://tagre.app",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/16.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'Accounting/Localizations',
     'version': '0.1',
+    'license': 'LGPL-3',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'account', 'l10n_pe'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
+        # 'data/account_tax_data.xml',
+        'data/l10n_pe_document_type.xml',
         'views/views.xml',
         'views/templates.xml',
-    ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
     ],
 }

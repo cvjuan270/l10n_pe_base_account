@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<!--     <record id="purchase_tax_ret_4ta_categ" model="account.tax.template">-->
+<!--        <field name="chart_template_id" ref="l10n_pe.pe_chart_template"/>-->
+<!--        <field name="name">8% Retencion 4ta. Categ.</field>-->
+<!--        <field name="description">4ta. Categ</field>-->
+<!--        <field name="amount">-8.0</field>-->
+<!--        <field name="type_tax_use">purchase</field>-->
+<!--        <field name="sequence">1</field>-->
+<!--        <field name="price_include">1</field>-->
+<!--        <field name="include_base_amount">1</field>-->
+<!--&lt;!&ndash;        <field name="tax_group_id" ref="tax_group_igv"/>&ndash;&gt;-->
+<!--        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),-->
+<!--            (0,0, {'repartition_type': 'base'}),-->
+<!--            (0,0, {-->
+<!--                'repartition_type': 'tax',-->
+<!--                'account_id': ref('l10n_pe.chart40117'),-->
+<!--            }),-->
+<!--         ]"/>-->
+<!--        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),-->
+<!--            (0,0, {'repartition_type': 'base'}),-->
+<!--            (0,0, {-->
+<!--                'repartition_type': 'tax',-->
+<!--                'account_id': ref('l10n_pe.chart40117'),-->
+<!--            }),-->
+<!--        ]"/>-->
+<!--    </record>-->
+</odoo>

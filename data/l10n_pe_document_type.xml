@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model='l10n_latam.document.type' id='document_type01'>
+        <field name='sequence'>70</field>
+        <field name='code'>14</field>
+        <field name='report_name'>Recibo por servicios públicos</field>
+        <field name='name'>Recibo por servicios públicos</field>
+        <field name='country_id' ref='base.pe'/>
+        <field name='doc_code_prefix'>S</field>
+        <field name='internal_type'>invoice</field>
+    </record>
+
+    <record model='l10n_latam.document.type' id='document_type02'>
+        <field name='sequence'>80</field>
+        <field name='code'>02</field>
+        <field name='report_name'>Recibo por Honorarios</field>
+        <field name='name'>Recibo por Honorarios</field>
+        <field name='country_id' ref='base.pe'/>
+        <field name='doc_code_prefix'>E</field>
+        <field name='internal_type'>invoice</field>
+    </record>
+
+    <record model='l10n_latam.document.type' id='document_type03'>
+        <field name='sequence'>90</field>
+        <field name='code'>91</field>
+        <field name='report_name'>Comprobante de No Domiciliado</field>
+        <field name='name'>Comprobante de No Domiciliado</field>
+        <field name='country_id' ref='base.pe'/>
+        <field name='doc_code_prefix'>C</field>
+        <field name='internal_type'>invoice</field>
+    </record>
+      <record model='l10n_latam.document.type' id='document_type04'>
+        <field name='sequence'>100</field>
+        <field name='code'>00</field>
+        <field name='report_name'>Otros</field>
+        <field name='name'>Otros</field>
+        <field name='country_id' ref='base.pe'/>
+        <field name='doc_code_prefix'>O</field>
+        <field name='internal_type'>invoice</field>
+    </record>
+</odoo>
