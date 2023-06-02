@@ -7,6 +7,7 @@
 
     'description': """
         - Completa tipos de comprobantes de pago como "[91] No domiciliados", etc.
+        - Reglas para registrar Notas de Credito de Cliente y proveedor
     """,
 
     'author': "Tagre app",
