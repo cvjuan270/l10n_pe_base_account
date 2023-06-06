@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+<!--    Add field transaction number and payment method on form-->
+    <record model="ir.ui.view" id="bank_statement_line_form_add_view">
+        <field name="name">l10n_pe_base_account.bank_statement_line_form_add_view</field>
+        <field name="model">account.bank.statement.line</field>
+        <field name="inherit_id" ref="account_accountant.view_bank_statement_line_form_bank_rec_widget"/>
+        <field name="arch" type="xml">
+            <field name="payment_ref" position="after">
+                <field name="l10n_pe_base_account_bank_transaction_number"/>
+                <field name="l10n_pe_base_account_payment_method_id"/>
+            </field>
+        </field>
+    </record>
+
+<!--    add field transaction number and payment method on list view-->
+    <record model="ir.ui.view" id="view_bank_statement_line_tree_bank_rec_widget">
+        <field name="name">l10n_pe_base_account.view_bank_statement_line_tree_bank_rec_widget</field>
+        <field name="model">account.bank.statement.line</field>
+        <field name="inherit_id" ref="account_accountant.view_bank_statement_line_tree_bank_rec_widget"/>
+        <field name="arch" type="xml">
+            <field name="payment_ref" position="after">
+                <field name="l10n_pe_base_account_payment_method_id"/>
+                <field name="l10n_pe_base_account_bank_transaction_number"/>
+            </field>
+        </field>
+    </record>
+<!--    <record model="ir.ui.view" id="account_bank_statement_line_form">-->
+<!--        <field name="name">l10n_pe_fiscal_base.account_bank_statement_line_form</field>-->
+<!--        <field name="model">account.bank.statement.line</field>-->
+<!--        <field name="inherit_id" ref="account_statement_base.account_bank_statement_line_form"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <field name="payment_ref" position="after">-->
+<!--                <field name="l10n_pe_fiscal_base_bank_transaction_number"/>-->
+<!--                <field name="l10n_pe_fiscal_base_payment_method_id"/>-->
+<!--            </field>-->
+<!--        </field>-->
+<!--    </record>-->
+</odoo>
